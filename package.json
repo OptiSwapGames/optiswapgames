@@ -1,0 +1,38 @@
+{
+  "name": "optigames_frontend",
+  "version": "0.1.1",
+  "description": "Internet Computer starter application",
+  "keywords": [
+    "Internet Computer",
+    "Motoko",
+    "JavaScript",
+    "Canister"
+  ],
+  "scripts": {
+    "build": "parcel build src/frontend/src/index.html",
+    "prebuild": "",
+    "start": "npm run dev",
+    "dev": "parcel src/frontend/src/index.html",
+    "predev": "node setupEnv.js;",
+    "postdev": ""
+  },
+  "devDependencies": {
+    "@dfinity/agent": "1.0.0",
+    "@dfinity/candid": "1.0.0",
+    "@dfinity/principal": "1.0.0",
+    "@dfinity/auth-client": "1.0.0",
+    "buffer": "^6.0.3",
+    "parcel": "^2.4.0",
+    "process": "^0.11.10"
+  },
+  "browserslist": [
+    "last 2 chrome version",
+    "last 2 firefox version",
+    "last 2 safari version",
+    "last 2 edge version"
+  ],
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

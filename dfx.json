@@ -1,0 +1,33 @@
+{
+  "canisters": {
+    "lobby": {
+        "main": "src/backend/lobby.mo",
+        "type": "motoko"
+      },
+    "bulldogblast": {
+        "main": "src/backend/bdb-router.mo",
+        "type": "motoko"
+      },
+    "frontend": {
+      "dependencies": [
+        "lobby", "bulldogblast"
+      ],
+      "frontend": {
+        "entrypoint": "dist/frontend/index.html"
+      },
+      "source": [
+        "src/frontend/assets",
+        "dist/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

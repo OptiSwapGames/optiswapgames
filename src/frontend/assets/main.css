@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #1e1e1e; /* Dark background color */
+    font-family: Arial, sans-serif;
+    color: #ffffff; /* Text color */
+    font-family: 'Montserrat', sans-serif; 
+}
+
+main {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Make text bigger and bolder */
+main,
+main p,
+main label,
+main input[type="text"],
+main button {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  background-color: #333; /* Input background color */
+  color: #ffffff; /* Input text color */
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    flex-flow: row wrap;
+    max-width: 40vw;
+    margin: auto;
+    align-items: baseline;
+}
+
+button[type="submit"] {
+  background-color: #007bff; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Button background color on hover */
+}
+
+img {
+  max-width: 75%; /* Set maximum width to 100% of its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto; /* Center the container */
+}
+
+#queue-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  margin: 0 auto; /* Center the container */
+  border: 2px solid #ccc; /* Add border */
+  padding: 10px; /* Add padding */
+  background-color: #1c2875; 
+}
+
+.character {
+  text-align: center;
+}
+
+.queue-slot img {
+  width: 100px; /* Adjust image width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Add some space between image and name */
+}
+
+
+
+
+
+/*bdb*/
+
+
+  @keyframes explode {
+    0% {
+      r: 0;
+      opacity: 1;
+    }
+    100% {
+      r: 100;
+      opacity: 0;
+    }
+  }
+
+  /* Style for the explosion circle */
+  .explosion {
+    animation: explode 1s ease-out forwards;
+  }
+
+
+  .avatar {
+    width: 50px;
+  }
+
+
+  .score {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  /* Positioning for player scores */
+  .top-left {
+    top: 0;
+    left: 0;
+    color: green;
+  }
+  .top-right {
+    top: 0;
+    right: 0;
+    color: orange;
+  }
+  .bottom-left {
+    bottom: 0;
+    left: 0;
+    color: red;
+  }
+  .bottom-right {
+    bottom: 0;
+    right: 0;
+    color: purple;
+  }
